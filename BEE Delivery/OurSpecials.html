@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Our Specials</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <style>
+        .button {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border-radius: 12px;
+        }
+
+        .button5 {
+            background-color: dimgray;
+            color: white;
+            border: 2px solid #555555;
+        }
+
+            .button5:hover {
+                background-color: white;
+                color: black;
+            }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!--Page Structure #Header Element-->
+        <a herf="welcome.html"><img src="beeLogo1.png" alt="logo"></a><!--logo with + click to return to the welcome page -->
+    </header>
+    <!--Page Structure #Nav Element-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Restaurants.html">Restaurants</a></li><!--page-->
+            <li><a href="OurSpecials.html">Our Specials</a></li>
+            <li><a href="Contact.html">Contact</a></li><!--forms-->
+
+            <li style="float:right"><a class="active" href="SignUp.html">Sign Up</a></li>
+        </ul>
+    </nav>
+    <p>Click the button to show a list of restaurants near your location</p>
+
+    <p id="LocationP">
+        CURRENT LOCATION : Jeddah , Alfyhaa 222890
+    </p>
+
+    <button id="showButton" onclick="createFunction();" class="button button5"> <strong>Show the restaurants in the current location</strong></button><!--when the user click the button , it will show Show the restaurant in his area-->
+
+    <p><strong>Deliver to</strong> </p>
+    <p>Jeddah , Alfyhaa 222890</p>
+    <p><strong>From</strong> </p>
+    <p>Dunkin Donuts</p>
+    <h4>Please select the item</h4>
+    <select id="itemPrice">
+        <!--on change call function to show the price-->
+        <option value="8">Espresso Shot</option>
+        <option value="11">Cappuccino</option>
+        <option value="12">Dunkaccino</option>
+        <option value="5">Freshly made donuts </option>
+        <option value="5">Fancies </option>
+        <option value="15">Croissant</option>
+    </select>
+    <br>
+    <h4>Please select the Quantity </h4>
+    <p>Note : Dozen contains 20 donuts the price of each one is 5SR</p>
+    <select id="QuantityOfItem" onchange="showTotal()">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="20">Dozen</option>
+    </select>
+    <br>
+    <p id="totalPricePara"></p>
+    <br>
+</body>
+</html>

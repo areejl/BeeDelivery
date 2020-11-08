@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Restaurants</title>
+    <style type="text/css">
+    =
+        nav {   
+            color: white;
+            border: 3px solid black;
+            align-items:center;
+            text-align: center;
+            width: 95em;
+            background-color: dimgray;
+            tab-size:inherit;
+        }
+            nav ul {
+                display: none;
+                background-color:gainsboro;
+                border:2px black;
+                margin: 0;
+                padding: 0;
+            }
+            nav:hover ul {
+                display:block;
+
+            }
+            nav ul li:hover {
+                background-color: lightslategrey;
+            }
+        a {
+            color:black;
+            text-decoration: none;
+        
+        }
+        body {
+            align-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: whitesmoke;
+        }
+
+        .header {
+            background-color: dimgrey;
+            padding: 20px;
+            border: solid;
+            box-shadow: inherit;
+            text-align: center;
+        }
+
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!--Page Structure #Header Element-->
+        <a herf="welcome.html"><img src="beeLogo1.png" alt="logo"></a>
+    </header>
+   
+    <nav>
+        Restaurants
+        <ul>
+            <li><a href="https://www.ihg.com/trip-extras/us/en/restaurants/details?restaurant_xid=1030990&search_id=587800&previous_page=add">Sakura Japanese Restaurant </a></li>
+            <li><a href="https://www.instagram.com/zafirofinedine/?hl=en">Zafiro Fine Dining</a></li>
+            <li><a href="https://www.instagram.com/aromitalianrestaurant/">Aromi Restaurant</a></li>
+            <li><a href="https://nino-jeddah.business.site/?utm_source=gmb&utm_medium=referral">NINO Restaurant</a></li>
+            <li><a href="https://bogasuperfood.com/">BOGA</a></li>
+            <li><a href="https://www.jeddah.mcdelivery.com.sa/sa/jed/browse/menu.html?daypartId=1&catId=1&locale=en&gclid=CjwKCAjwlID8BRAFEiwAnUoK1YynMIuEq5mrIHL_tRQnsp9spUCrFzrqWCG6_nuR4MgdTcDVRPVVrhoCoHoQAvD_BwE&gclsrc=aw.ds">McDonald's</a></li>
+        </ul>
+    </nav>
+    <br />
+    <br />
+    <h3>Click on your city on the map to get a list of restaurants!</h3>
+    <img src="map.png" usemap="#image-map">
+
+
+    <map name="image-map">
+        <area target="_self" alt="Jeddah Restaurants" title="Jeddah Restaurants" href="https://ar.tripadvisor.com/Restaurants-g295419-Jeddah_Makkah_Province.html" coords="52,140,83,98" shape="rect">
+        <area target="_self" alt="Riyadh Restaurants" title="Riyadh Restaurants" href="https://ar.tripadvisor.com/Restaurants-g293995-Riyadh_Riyadh_Province.html" coords="94,80,143,127" shape="rect">
+        <area target="_top" alt="Dammam Restaurants" title="Dammam Restaurants" href="https://ar.tripadvisor.com/Restaurants-g298547-Dammam_Eastern_Province.html" coords="234,119,148,52" shape="rect">
+    </map>
+</body>
+</html>

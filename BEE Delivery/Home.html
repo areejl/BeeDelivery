@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="StyleSheet1.css">
+    <script type="text/javascript" src="JavaScript.js"></script>
+    <style>
+        div.gallery {
+            margin: 15px;
+            border: 2px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+                box-shadow: -20px 20px 20px lightgray;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!--Page Structure #Header Element-->
+        <img src="beeLogo1.png" alt="logo">
+    </header>
+    <!--Page Structure #Nav Element-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Restaurants.html">Restaurants</a></li><!--page-->
+            <li><a href="OurSpecials.html">Our Specials</a></li>
+            <li><a href="Contact.html">Contact Us</a></li><!--forms-->
+
+            <li style="float:right"><a class="active" href="SignUp.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <h1 id="textstyle">Various Cuisines</h1>
+        <figure>
+            <img src="arabian food.jpg" alt="arb" style="width:40%" id="arabian">
+            <figcaption><h3 id="textstyle">Arabian</h3> </figcaption>
+        </figure>
+        <hr />
+        <figure>
+            <img src="fast_food.jpg" alt="fast" style="width:40%" id="FastFood" onmousemove="ChangeImgWithEvent()">
+            <figcaption>
+                <h3 id="textstyle">Fast Food</h3>
+                <h4>Move the mouse on the image to change it !</h4>
+            </figcaption>
+        </figure>
+        <hr />
+        <figure>
+            <img src="sushi.jpg" alt="sushi" style="width:40%">
+            <figcaption><h3 id="textstyle">Japanese</h3> </figcaption>
+        </figure>
+        <hr />
+    </section>
+
+    <footer class="footer">
+
+        <p id="textstyle">FAQ</p>                      <p id="textstyle">Terms of use </p>                <p id="textstyle">Privacy Policy</p>
+
+    </footer>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div.gallery {
+            margin: 15px;
+            border: 2px solid #ccc;
+            float: left;
+            width: 180px;
+        }
+
+            div.gallery:hover {
+                border: 1px solid #777;
+                box-shadow: -20px 20px 20px lightgray;
+            }
+
+            div.gallery img {
+                width: 100%;
+                height: auto;
+            }
+
+        div.desc {
+            padding: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+</html>
+<!--<div class="gallery">
+        <a target="_blank" href="img_5terre.jpg">
+            <img src="img_5terre.jpg" alt="Cinque Terre" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_forest.jpg">
+            <img src="img_forest.jpg" alt="Forest" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_lights.jpg">
+            <img src="img_lights.jpg" alt="Northern Lights" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+    <div class="gallery">
+        <a target="_blank" href="img_mountains.jpg">
+            <img src="img_mountains.jpg" alt="Mountains" width="600" height="400">
+        </a>
+        <div class="desc">Add a description of the image here</div>
+    </div>
+
+</body>
+-->

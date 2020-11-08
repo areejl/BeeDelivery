@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title> Contact Us</title>
+    <style>
+        table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+
+        .header {
+            background-color: dimgrey;
+            padding: 20px;
+            border: solid;
+            box-shadow: inherit;
+            text-align: center;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        li {
+            float: left;
+        }
+
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                li a:hover:not(.active) {
+                    background-color: #111;
+                }
+    </style>
+    <!--<script type="text/javascript" src="JavaScript.js"></script>-->
+    <script type="text/javascript" src="JavaScript.js"></script>
+
+</head>
+
+<body style="background-color:whitesmoke" ;>
+    <header class="header">
+        <!--Page Structure #Header Element-->
+        <a herf="welcome.html"><img src="beeLogo1.png" alt="logo"></a><!--logo with + click to return to the welcome page -->
+    </header>
+    <!--Page Structure #Nav Element-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Restaurants.html">Restaurants</a></li><!--page-->
+            <li><a href="OurSpecials.html">Our Specials</a></li>
+            <li><a href="Contact.html">Contact Us</a></li><!--forms-->
+            <li style="float:right"><a class="active" href="SignUp.html">Sign Up</a></li>
+        </ul>
+    </nav>
+
+    <h1>Reach out to us directly </h1>
+
+
+    <table style="width:100%">
+        <tr>
+            <th>	Telephone</th>
+            <th colspan="2">location</th>
+        </tr>
+        <tr>
+            <td>King Abdul Aziz Road</td>
+            <td>Backyard building</td>
+            <td>
+                Al Yasmin, 2467, Riyadh 13326
+                Saudi Arabia
+            </td>
+        </tr>
+    </table>
+
+    <h1>We'd love to hear from you !</h1>
+
+
+    <form id="contactform">
+
+        <p>Note : Name should be at least 2 characters </p>
+        <label for="name"><strong>Name</strong></label>
+        <br>
+        <input type="text" id="name" name="name">
+        <br>
+
+        <p>Note :The password and confirm password fields should have the same data and more than 8 </p>
+        <label for="password"><strong>Password</strong></label>
+        <br>
+        <input type="password" id="password">
+        <br>
+        <label for="confirmPassword"><strong>Confirm Password</strong></label>
+        <br>
+        <input type="password" id="confirmPassword">
+        <br>
+        <label for="Message"><strong>Message</strong></label>
+        <br>
+        <textarea id="Message" name="Message" style="width: 300px; height:200px;"></textarea>
+        <br>
+        <input type="submit" value="Send" onclick= "validateform()">
+    </form>
+
+</body>
+</html>
+
+</body>
+</html>
